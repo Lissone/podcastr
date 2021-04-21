@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript} from 'next/document'
 
+//Página html principal do projeto
 export default class MyDocument extends Document {
 	render() {
 		return (
