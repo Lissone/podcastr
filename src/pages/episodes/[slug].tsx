@@ -55,16 +55,16 @@ export default function Episode({episode}: EpisodeProps) {
 
       <div 
         className={styles.description} 
-        dangerouslySetInnerHTML={{ __html: episode.description }} 
+        dangerouslySetInnerHTML={{ __html: episode.description }} //Fazer valor ser apresentado como html
       />
     </div>
   )
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {  //Necessário para telas estaticas dinamicas
   return {
-    paths: [],
-    fallback: 'blocking'
+    paths: [], //Colocar params que deseja acessar de forma estática
+    fallback: 'blocking' //Apenas mostrar a página quando as informações da api já estiverem em tela
   }
 }
 
