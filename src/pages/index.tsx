@@ -2,6 +2,7 @@ import ptBR from 'date-fns/locale/pt-BR'
 import Link from 'next/link' //navegar entre telas, sem precisar carregar todo web novamente
 import { format, parseISO } from 'date-fns'
 import { GetStaticProps } from 'next' //tipo de funcao SSG
+import Head from 'next/head'
 import Image from 'next/image'
 
 import { convertDurationToTimeString } from '../utils/convertDurationToTimeString'
@@ -33,6 +34,10 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
 
   return (
     <div className={styles.homePage}>
+      <Head>
+        <title>Home | Podcastr</title>
+      </Head>
+
       <section className={styles.latestEpisodes}>
         <h2>Últimos lançamentos</h2>
 
