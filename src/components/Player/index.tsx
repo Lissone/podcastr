@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Slider from 'rc-slider'
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useState } from 'react'
 
+import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString'
 import { usePlayer } from '../../contexts/PlayerContext'
 
 import 'rc-slider/assets/index.css'
@@ -9,6 +10,7 @@ import styles from './styles.module.scss'
 
 export function Player() {
 	const audioRef = useRef<HTMLAudioElement>(null)
+	const [progress, setProgress] = useState(0)
 
 	const { 
 		episodeList, 
@@ -23,7 +25,8 @@ export function Player() {
 		hasPrevious,
 		isLooping,
 		isShuffling,
-		toggleShuffle
+		toggleShuffle,
+		clearPlayerState
 	} = usePlayer()
 
 	useEffect(() => {
@@ -36,6 +39,27 @@ export function Player() {
 
 	}, [isPlaying])
 
+	function setupProgressListener() {
+		audioRef.current.currentTime = 0
+
+		audioRef.current.addEventListener('timeupdate',() => {
+			setProgress(Math.floor(audioRef.current.currentTime))
+		})
+	}
+
+	function handleSeek(ammount: number) {
+		audioRef.current.currentTime = ammount
+		setProgress(ammount)
+	}
+
+	function handleEpisodeEnded() {
+		if(hasNext) 
+			playNext()
+		else
+			clearPlayerState()
+			setProgress(0)
+	}
+ 
 	const episode = episodeList[currentEpisodeIndex]
 
   return (
@@ -64,10 +88,13 @@ export function Player() {
 
 			<footer className={styles.empty}>
 				<div className={styles.progress}>
-					<span>00:00</span>
+				<span>{convertDurationToTimeString(progress)}</span>
 					<div className={styles.slider} >
 						{ episode ? (
 							<Slider 
+								max={episode.duration}
+								value={progress}
+								onChange={handleSeek}
 								trackStyle={{ background: '#04d361' }}
 								railStyle={{ background: '#9f75ff' }}
 								handleStyle={{ borderColor: '#04d361', borderWidth: 4 }}
@@ -76,7 +103,7 @@ export function Player() {
 							<div className={styles.emptySlider} />
 						) }
 					</div>
-					<span>00:00</span>
+					<span>{convertDurationToTimeString(episode?.duration ?? 0)}</span>
 				</div>
 
 				{ episode 
@@ -86,8 +113,10 @@ export function Player() {
 							ref={audioRef}
 							loop={isLooping}
 							autoPlay
+							onEnded={handleEpisodeEnded}
 							onPlay={() => setPlayingState(true)}
 							onPause={() => setPlayingState(false)}
+							onLoadedMetadata={setupProgressListener}
 						/>
 					) 
 				}
