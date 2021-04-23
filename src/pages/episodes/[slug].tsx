@@ -62,8 +62,24 @@ export default function Episode({episode}: EpisodeProps) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {  //Necessário para telas estaticas dinamicas
+  const { data } = await api.get('/episodes', {
+    params: {
+      _limit: 2,
+      _sort: 'published_at',
+      _order: 'desc'
+    }
+  })
+
+  const paths = data.map(episode => {
+    return {
+      params: {
+        slug: episode.id
+      }
+    }
+  })
+
   return {
-    paths: [], //Colocar params que deseja acessar de forma estática
+    paths, //Colocar params que deseja acessar de forma estática
     fallback: 'blocking' //Apenas mostrar a página quando as informações da api já estiverem em tela
   }
 }
