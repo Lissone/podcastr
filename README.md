@@ -5,7 +5,7 @@
 <p align="center">
     <a href="#descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#instalando">Dependencias</a>
+  <a href="#instalando%20dependencias">Dependencias</a>
 </p>
 
 <p align="center">
@@ -36,7 +36,7 @@ Site de reprodução de podcasts, com um player completo para escutar seu episó
 - Sass
 - JsonServer (Fake api)
 
-## Instalando
+## Instalando Dependencias
 
 ```bash
 https://github.com/Lissone/podcastr.git
