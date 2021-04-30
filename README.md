@@ -5,7 +5,7 @@
 <p align="center">
     <a href="#descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#instalando%20dependencias">Dependencias</a>
+  <a href="#instalando dependencias">Dependencias</a>
 </p>
 
 <p align="center">
