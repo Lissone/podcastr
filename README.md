@@ -9,7 +9,7 @@
 ![Episode](https://i.imgur.com/NuTQcUY.png)
 
 ## Descrição
-Projeto da 5ª edição da semana Next Level Week (NLW), ministrada pelo Diego Fernandes (CTO Rocketseat).
+Projeto da 5ª edição da semana Next Level Week (NLW), ministrada pelo Diego Fernandes (CTO Rocketseat), nos dias 19 a 25 de abril de 2021.
 Site de reprodução de podcasts, com um player completo para escutar seu episódio, único ou em playlists.
 
 ## Tecnologias
