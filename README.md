@@ -2,11 +2,11 @@
 
 **Tela Inicial**
 
-![Home](https://imgur.com/ayWyTyV)
+![Home](https://i.imgur.com/NuTQcUY.png)
 
 **Página episódio**
 
-![Episode](https://imgur.com/NuTQcUY)
+[Episode](https://i.imgur.com/NuTQcUY.png)
 
 ## Descrição
 Projeto da 5ª edição da semana Next Level Week (NLW), ministrada pelo Diego Fernandes (CTO Rocketseat).
