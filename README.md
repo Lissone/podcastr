@@ -2,7 +2,7 @@
 
 **Tela Inicial**
 
-![Home](https://i.imgur.com/NuTQcUY.png)
+![Home](https://i.imgur.com/ayWyTyV.png)
 
 **Página episódio**
 
