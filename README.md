@@ -1,5 +1,13 @@
 # Podcastr
 
+**Tela Inicial**
+
+![Home](https://imgur.com/ayWyTyV)
+
+**Página episódio**
+
+![Episode](https://imgur.com/NuTQcUY)
+
 ## Descrição
 Projeto da 5ª edição da semana Next Level Week (NLW), ministrada pelo Diego Fernandes (CTO Rocketseat).
 Site de reprodução de podcasts, com um player completo para escutar seu episódio, único ou em playlists.
