@@ -1,12 +1,11 @@
-<h1 align="center" display="flex" flex-direction="column">
+<h1 align="center">
   <img alt="NLW" title="NLW" src="https://lh3.googleusercontent.com/pw/ACtC-3f-7nBBuI0Alh5r4kgAEXknk0FKxnId6R195M_WSfEU7Gfv141FSRR-BxwVtdZJ1t5tqjk8xFAz3PFi9y6ebeGVa9cRhLucmNt64S_VoEFD2F97vtPvYQfKNQD2J3aBvyd2wFPofAAewTpNR-B0Eqpa=w233-h215-no?authuser=0" />
-  Podcastr
 </h1>
 
 <p align="center">
     <a href="#descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#instalandodependencias">Dependencias</a>
+  <a href="#instalando">Dependencias</a>
 </p>
 
 <p align="center">
@@ -37,7 +36,7 @@ Site de reprodução de podcasts, com um player completo para escutar seu episó
 - Sass
 - JsonServer (Fake api)
 
-## Instalando Dependencias
+## Instalando
 
 ```bash
 https://github.com/Lissone/podcastr.git
