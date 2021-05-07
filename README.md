@@ -39,7 +39,7 @@ Site de reprodução de podcasts, com um player completo para escutar seu episó
 ## Instalando
 
 ```bash
-https://github.com/Lissone/podcastr.git
+git clone "https://github.com/Lissone/podcastr.git"
 cd podcastr
 yarn
 #or
