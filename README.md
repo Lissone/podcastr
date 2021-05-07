@@ -3,7 +3,8 @@
 </h1>
 
 <p align="center">
-    <a href="#descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#requerimentos">Requerimentos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#instalando">Dependencias</a>
 </p>
@@ -19,6 +20,11 @@
 ## Descrição
 Projeto da 5ª edição da semana Next Level Week (NLW), ministrada pelo Diego Fernandes (CTO Rocketseat), nos dias 19 a 25 de abril de 2021.
 Site de reprodução de podcasts, com um player completo para escutar seu episódio, único ou em playlists.
+
+## Requerimentos
+
+* [Yarn](https://yarnpkg.com/)
+* [Nodejs](https://nodejs.org/en/)
 
 ## Tecnologias
 
