@@ -16,14 +16,6 @@
 
 <br>
 
-**Tela Inicial**
-
-![Home](https://i.imgur.com/ayWyTyV.png)
-
-**Página episódio**
-
-![Episode](https://i.imgur.com/NuTQcUY.png)
-
 ## Descrição
 Projeto da 5ª edição da semana Next Level Week (NLW), ministrada pelo Diego Fernandes (CTO Rocketseat), nos dias 19 a 25 de abril de 2021.
 Site de reprodução de podcasts, com um player completo para escutar seu episódio, único ou em playlists.
@@ -36,12 +28,21 @@ Site de reprodução de podcasts, com um player completo para escutar seu episó
 - Sass
 - JsonServer (Fake api)
 
+**Tela Inicial**
+
+![Home](https://i.imgur.com/ayWyTyV.png)
+
+**Página episódio**
+
+![Episode](https://i.imgur.com/NuTQcUY.png)
+
 ## Instalando
 
 ```bash
 https://github.com/Lissone/podcastr.git
 cd podcastr
 yarn
+#or
 npm run
 ```
 
@@ -49,6 +50,7 @@ npm run
 
 ```bash
 yarn server
+#or
 npm run server
 ```
 
@@ -56,5 +58,6 @@ npm run server
 
 ```bash
 yarn dev
+#or
 npm run dev
 ```
