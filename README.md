@@ -6,7 +6,8 @@
   <a href="#descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#requerimentos">Requerimentos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#instalando">Dependencias</a>
+  <a href="#instalando">Dependencias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#demonstracao">Demonstração</a>
 </p>
 
 <p align="center">
@@ -34,14 +35,6 @@ Site de reprodução de podcasts, com um player completo para escutar seu episó
 - Sass
 - JsonServer (Fake api)
 
-**Tela Inicial**
-
-![Home](https://i.imgur.com/ayWyTyV.png)
-
-**Página episódio**
-
-![Episode](https://i.imgur.com/NuTQcUY.png)
-
 ## Instalando
 
 ```bash
@@ -67,3 +60,13 @@ yarn dev
 #or
 npm run dev
 ```
+
+## Demonstracao
+
+**Tela Inicial**
+
+![Home](https://i.imgur.com/ayWyTyV.png)
+
+**Página episódio**
+
+![Episode](https://i.imgur.com/NuTQcUY.png)
