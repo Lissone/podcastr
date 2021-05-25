@@ -1,5 +1,7 @@
-.playerContainer {
-	padding: 1.5rem 4rem;
+import styled from 'styled-components'
+
+export const PlayerContainer = styled.div`
+  padding: 1.5rem 4rem;
 	width: 26.5rem;
 	height: 100vh;
 
@@ -29,32 +31,32 @@
 			opacity: 0.5;
 		}
 	}
-}
+`
 
-.currentEpisode {
-	text-align: center;
+export const CurrentEpisode = styled.div`
+  text-align: center;
 
-	img {
-		border-radius: 1.5rem;
-	}
+  img {
+    border-radius: 1.5rem;
+  }
 
-	strong {
-		display: block;
-		margin-top: 2rem;
-		font: 600 1.25 Lexend, sans-serif;
-		line-height: 1.75;
-	}
+  strong {
+    display: block;
+    margin-top: 2rem;
+    font: 600 1.25 Lexend, sans-serif;
+    line-height: 1.75;
+  }
 
-	span {
-		display: block;
-		margin-top: 1rem;
-		opacity: 0.6;
-		line-height: 1.5rem;
-	}
-}
+  span {
+    display: block;
+    margin-top: 1rem;
+    opacity: 0.6;
+    line-height: 1.5rem;
+  }
+`
 
-.emptyPlayer {
-	width: 100%;
+export const EmptyPlayer = styled.div`
+  width: 100%;
 	height: 20rem;
 	border: 1.5px dashed var(--purple-300);
 	border-radius: 1.5rem;
@@ -66,9 +68,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
+`
 
-.progress {
+export const Progress = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 1rem;
@@ -90,9 +92,9 @@
 			border-radius: 2px;
 		}
 	}
-}
+`
 
-.buttons {
+export const Buttons = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -134,4 +136,4 @@
 			}
 		}
 	}
-}
+`
