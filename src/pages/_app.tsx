@@ -3,20 +3,22 @@ import { Header } from '../components/Header'
 import { Player } from '../components/Player'
 
 import { GlobalStyle } from '../styles/global'
-import styles from '../styles/app.module.scss'
+import { Wrapper } from '../styles/app'
 
 function MyApp({ Component, pageProps }) {
   return (
     <PlayerContextProvider>
       <GlobalStyle />
       
-      <div className={styles.wrapper}>
+      <Wrapper>
         <main>
           <Header />
+
           <Component {...pageProps} />
         </main>
+
         <Player />
-      </div>
+      </Wrapper>
     </PlayerContextProvider>
   );
 }
