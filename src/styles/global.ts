@@ -1,10 +1,13 @@
-* {
+import { createGlobalStyle } from 'styled-components'
+
+export const GlobalStyle = createGlobalStyle`
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 
-:root {
+  :root {
     --white: #FFF;
 
     --gray-50: #F7F8FA;
@@ -19,43 +22,44 @@
     --purple-400: #9164FA; 
     --purple-500: #8257E5;
     --purple-800: #6F48C9;
-}
+  }
 
-@media (max-width: 1080px) {
+  @media (max-width: 1080px) {
     html {
-        font-size: 93.75%; //15px
+      font-size: 93.75%; //15px
     }
-}
+  }
 
-@media (max-width: 720px) {
+  @media (max-width: 720px) {
     html {
-        font-size: 87.5%; //14px
+      font-size: 87.5%; //14px
     }
-}
+  }
 
-body {
+  body {
     background: var(--gray-50);
-}
+  }
 
-body, input, textarea, button {
+  body, input, textarea, button {
     font: 500 1rem Inter, sans-serif;
     color: var(--gray-500);
-}
+  }
 
-h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     font-family: Lexend, sans-serif;
     color: var(--gray-800);
-}
+  }
 
-h1 {
+  h1 {
     font-size: 2rem;
-}
+  }
 
-h2 {
+  h2 {
     font-size: 1.5rem;
-}
+  }
 
-button {
+  button {
     cursor: pointer;
-}
+  }
+`
