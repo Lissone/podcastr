@@ -1,4 +1,6 @@
-.headerContainer {
+import styled from 'styled-components';
+
+export const HeaderContainer = styled.header`
 	background: var(--white);
 	height: 6.5rem;
 
@@ -19,4 +21,4 @@
 		margin-left: auto;
 		text-transform: capitalize;
 	}
-}
+`
