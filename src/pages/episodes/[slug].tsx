@@ -4,12 +4,14 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
-import { usePlayer } from '../../contexts/PlayerContext'
 
+import { usePlayer } from '../../contexts/PlayerContext'
 import { api } from '../../services/api'
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString'
 
-import styles from './episode.module.scss'
+import { Scroll, Content, ThumbnailContainer, Description } from './styles'
+import React from 'react'
+// import styles from './episode.module.scss'
 
 type Episode = {
   id: string
@@ -31,13 +33,13 @@ export default function Episode({episode}: EpisodeProps) {
   const { play } = usePlayer()
 
   return (
-    <div className={styles.scroll}>
+    <Scroll>
       <Head>
         <title>{episode.title} | Podcastr</title>
       </Head>
 
-      <div className={styles.episode}>
-        <div className={styles.thumbnailContainer}>
+      <Content>
+        <ThumbnailContainer>
           <Link href="/">
             <button type="button">
               <img src="/arrow-left.svg" alt="Voltar"/>
@@ -53,7 +55,7 @@ export default function Episode({episode}: EpisodeProps) {
           <button type="button" onClick={() => play(episode)}>
             <img src="/play.svg" alt="Tocar episodio"/>
           </button>
-        </div>
+        </ThumbnailContainer>
 
         <header>
           <h1>{episode.title}</h1>
@@ -62,12 +64,11 @@ export default function Episode({episode}: EpisodeProps) {
           <span>{episode.durationAsString}</span>
         </header>
 
-        <div 
-          className={styles.description} 
+        <Description 
           dangerouslySetInnerHTML={{ __html: episode.description }} //Fazer valor ser apresentado como html
         />
-      </div>
-    </div>
+      </Content>
+    </Scroll>
   )
 }
 
