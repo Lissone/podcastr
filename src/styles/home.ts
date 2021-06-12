@@ -5,6 +5,12 @@ export const Container = styled.div`
   height: calc(100vh - 6.5rem);
   overflow-y: scroll;
 
+  @media (max-width: 1450px) {
+    height: 100%;
+    overflow-y: unset;
+    padding-bottom: 13rem;
+  }
+
   h2 {
     margin-top: 3rem;
     margin-bottom: 1.5rem;
