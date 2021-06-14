@@ -8,20 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   :root {
-    --white: #FFF;
-
-    --gray-50: #F7F8FA;
-    --gray-100: #E6E8EB;
-    --gray-200: #AFB2B1;
-    --gray-500: #808080;
-    --gray-800: #494D4B;
-
-    --green-500: #04D361;
-
-    --purple-300: #9F75FF;
     --purple-400: #9164FA; 
-    --purple-500: #8257E5;
-    --purple-800: #6F48C9;
   }
 
   @media (max-width: 1080px) {
@@ -37,18 +24,18 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: var(--gray-50);
+    background: ${({theme}) => theme.colors.background};
   }
 
   body, input, textarea, button {
     font: 500 1rem Inter, sans-serif;
-    color: var(--gray-500);
+    color: ${({theme}) => theme.colors.subText};
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     font-family: Lexend, sans-serif;
-    color: var(--gray-800);
+    color: ${({theme}) => theme.colors.text};
   }
 
   h1 {
@@ -69,17 +56,12 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(13deg, #ADADAD 14%,#adadad 64%);
+    background: ${({theme}) => theme.colors.description};
     border-radius: 0px;
   }
 
-  ::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(13deg, #8c8c8c 14%,#8C8C8C 64%);
-  }
-
   ::-webkit-scrollbar-track{
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: inset 7px 10px 12px #f0f0f0;
+    background: ${({theme}) => theme.colors.subBackground};
+    border-radius: 0px;
   }
 `

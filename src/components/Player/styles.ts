@@ -5,8 +5,8 @@ export const PlayerContainer = styled.div`
 	width: 26.5rem;
 	height: 100vh;
 
-	background: var(--purple-500);
-	color: var(--white);
+	background: ${({theme}) => theme.colors.secondary};
+	color: #fff;
 
 	display: flex;
 	flex-direction: column;
@@ -96,7 +96,7 @@ export const CurrentEpisode = styled.div`
 export const EmptyPlayer = styled.div`
   width: 100%;
 	height: 20rem;
-	border: 1.5px dashed var(--purple-300);
+	border: 1.5px dashed ${({theme}) => theme.colors.primary};
 	border-radius: 1.5rem;
 	background: linear-gradient(143.8deg, rgba(145, 100, 250, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
 
@@ -133,7 +133,7 @@ export const Progress = styled.div`
 		.emptySlider {
 			width: 100%;
 			height: 4px;
-			background: var(--purple-300);
+			background: ${({theme}) => theme.colors.primary};
 			border-radius: 2px;
 		}
 	}
