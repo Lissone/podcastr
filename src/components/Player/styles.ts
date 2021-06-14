@@ -6,7 +6,7 @@ export const PlayerContainer = styled.div`
 	height: 100vh;
 
 	background: ${({theme}) => theme.colors.secondary};
-	color: var(--white);
+	color: #fff;
 
 	display: flex;
 	flex-direction: column;
