@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 export const Scroll = styled.div`
   height: calc(100vh - 6.5rem);
-  overflow-y: scroll;
 
-  padding: 3rem 2rem;
   margin: 0 auto;
 `
 
@@ -20,6 +18,12 @@ export const Content = styled.div`
     h1 {
       margin-top: 2rem;
       margin-bottom: 1.5rem;
+
+      transition: all 0.6s ease;
+
+      @media (max-width: 500px) {
+        font-size: 1.6rem;
+      }
     }
 
     span {
@@ -41,6 +45,23 @@ export const Content = styled.div`
           left: 0;
           top: 50%;
           transform: translate(-50%, -50%);
+        }
+      }
+
+      @media (max-width: 450px) {
+        padding-top: 1rem;
+
+        & + span {
+          margin-left: 0;
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-left: 1rem;
+        }
+
+        &::before {
+          display: none;
         }
       }
     }
