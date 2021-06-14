@@ -37,18 +37,18 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: var(--gray-50);
+    background: ${({theme}) => theme.colors.background};
   }
 
   body, input, textarea, button {
     font: 500 1rem Inter, sans-serif;
-    color: var(--gray-500);
+    color: ${({theme}) => theme.colors.subText};
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     font-family: Lexend, sans-serif;
-    color: var(--gray-800);
+    color: ${({theme}) => theme.colors.text};
   }
 
   h1 {
@@ -79,7 +79,7 @@ export const GlobalStyle = createGlobalStyle`
 
   ::-webkit-scrollbar-track{
     background: #ffffff;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: inset 7px 10px 12px #f0f0f0;
   }
 `

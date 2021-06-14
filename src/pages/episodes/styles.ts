@@ -18,7 +18,7 @@ export const Content = styled.div`
 
   header {
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--green-100);
+    border-bottom: 1px solid ${({theme}) => theme.colors.border};
 
     h1 {
       margin-top: 2rem;
@@ -45,7 +45,7 @@ export const Content = styled.div`
           width: 4px;
           height: 4px;
           border-radius: 2px;
-          background: #ddd;
+          background: ${({theme}) => theme.colors.subText};
           position: absolute;
           left: 0;
           top: 50%;
@@ -94,14 +94,14 @@ export const ThumbnailContainer = styled.div`
     &:first-child {
       left: 0;
       top: 50%;
-      background: var(--purple-500);
+      background: ${({theme}) => theme.colors.secondary};
       transform: translate(-50%, -50%);
     }
 
     &:last-child {
       right: 0;
       top: 50%;
-      background: var(--green-500);
+      background: ${({theme}) => theme.colors.active};
       transform: translate(50%, -50%);
     }
 
@@ -114,7 +114,7 @@ export const ThumbnailContainer = styled.div`
 export const Description = styled.div`
   margin-top: 2rem;
   line-height: 1.675rem;
-  color: var(--gray-800);
+  color: ${({theme}) => theme.colors.text};
 
   p {
     margin: 1.5rem 0;
