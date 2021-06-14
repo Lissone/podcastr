@@ -65,8 +65,8 @@ npm run dev
 
 **Tela Inicial**
 
-![Home](https://i.imgur.com/ayWyTyV.png)
+![Home](https://i.imgur.com/k1XCKhJ.png)
 
 **Página episódio**
 
-![Episode](https://i.imgur.com/NuTQcUY.png)
+![Episode](https://i.imgur.com/lGaZqtv.png)

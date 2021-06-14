@@ -1,18 +1,29 @@
 import format from 'date-fns/format'
 import ptBR from 'date-fns/locale/pt-BR'
 
-import styles from './styles.module.scss'
+import { DarkModeButton } from '../DarkModeButton'
+import { Logo } from '../Logo'
 
-export function Header() {
+import { HeaderContainer } from './styles'
+
+interface HeaderProps {
+  toggleTheme: () => void
+}
+
+export function Header({toggleTheme}: HeaderProps) {
 	const currentDate = format(new Date(), 'EEEEEE, d MMMM', {
 		locale: ptBR
 	})
 
   return (
-		<header className={styles.headerContainer}>
-			<img src="/logo.svg" alt="Podcastr"/>
+		<HeaderContainer>
+			<Logo />
+
 			<p>O melhor para você ouvir, sempre</p>
+
 			<span>{currentDate}</span>
-		</header>
+
+			<DarkModeButton toggleTheme={toggleTheme}/>
+		</HeaderContainer>
 	);
 }
