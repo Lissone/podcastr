@@ -32,13 +32,13 @@ Site de reprodução de podcasts, com um player completo para escutar seu episó
 - Typescript
 - Next.js
 - React
-- Sass
+- StyledComponents
 - JsonServer (Fake api)
 
 ## Instalando
 
 ```bash
-git clone "https://github.com/Lissone/podcastr.git"
+git clone https://github.com/Lissone/podcastr.git
 cd podcastr
 yarn
 #or
