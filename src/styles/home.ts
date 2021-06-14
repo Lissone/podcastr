@@ -12,8 +12,8 @@ export const Container = styled.div`
 
   @media (max-width: 1450px) {
     height: 100%;
+    
     overflow-y: unset;
-    padding-bottom: 13rem !important;
   }
 
   @media (max-width: 650px) {
