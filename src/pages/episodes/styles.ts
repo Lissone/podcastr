@@ -2,8 +2,13 @@ import styled from 'styled-components';
 
 export const Scroll = styled.div`
   height: calc(100vh - 6.5rem);
+  overflow-y: scroll;
 
   margin: 0 auto;
+
+  @media (max-width: 1450px) {
+    overflow-y: hidden;
+  }
 `
 
 export const Content = styled.div`

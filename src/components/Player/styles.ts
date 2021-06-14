@@ -17,6 +17,7 @@ export const PlayerContainer = styled.div`
 		display: 	flex;
 		align-items: center;
 		gap: 1rem;
+		padding-bottom: 1rem;
 	}
 
 	strong {
