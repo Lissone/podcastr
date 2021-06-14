@@ -9,9 +9,8 @@ import { usePlayer } from '../../contexts/PlayerContext'
 import { api } from '../../services/api'
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString'
 
-import { Scroll, Content, ThumbnailContainer, Description } from './styles'
+import { Scroll, Content, ThumbnailContainer, Description } from '../../styles/episodes'
 import React from 'react'
-// import styles from './episode.module.scss'
 
 type Episode = {
   id: string
