@@ -17,6 +17,7 @@ export const PlayerContainer = styled.div`
 		display: 	flex;
 		align-items: center;
 		gap: 1rem;
+		padding-bottom: 1rem;
 	}
 
 	strong {
@@ -28,9 +29,22 @@ export const PlayerContainer = styled.div`
 		align-self: stretch;
 
 		&.empty .progress {
-			opacity: 0.5;
+			opacity: 1;
 		}
 	}
+
+	@media (max-width: 1450px) {
+		width: 100%;
+    height: 13rem;
+		padding: 1rem 2rem;
+
+		position: fixed;
+    bottom: 0;
+
+		header {
+			display: none;
+		}
+  }
 `
 
 export const CurrentEpisode = styled.div`
@@ -53,6 +67,30 @@ export const CurrentEpisode = styled.div`
     opacity: 0.6;
     line-height: 1.5rem;
   }
+
+	@media (max-width: 1450px) {
+		position: relative;
+		top: -.8rem;
+
+		img {
+			display: none !important;
+		}
+
+		strong {
+			margin: 0;
+		}
+
+		span {
+			position: relative;
+			margin: 0;
+
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 1;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+  }
 `
 
 export const EmptyPlayer = styled.div`
@@ -68,6 +106,12 @@ export const EmptyPlayer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@media (max-width: 1450px) {
+		width: 85%;
+		height: 0;
+		padding: 2rem 0;
+  }
 `
 
 export const Progress = styled.div`
@@ -83,6 +127,7 @@ export const Progress = styled.div`
 	}
 
 	.slider {
+		margin-bottom: .5rem;
 		flex: 1;
 
 		.emptySlider {
@@ -90,6 +135,21 @@ export const Progress = styled.div`
 			height: 4px;
 			background: var(--purple-300);
 			border-radius: 2px;
+		}
+	}
+
+	@media (max-width: 1450px) {
+		justify-content: space-between;
+
+		.slider {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: -.5rem;
+
+			.emptySlider {
+				width: 0;
+			}
 		}
 	}
 `
@@ -136,4 +196,8 @@ export const Buttons = styled.div`
 			}
 		}
 	}
+
+	@media (max-width: 1450px) {
+		margin-top: 0;
+  }
 `

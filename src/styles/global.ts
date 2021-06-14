@@ -62,4 +62,24 @@ export const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(13deg, #ADADAD 14%,#adadad 64%);
+    border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(13deg, #8c8c8c 14%,#8C8C8C 64%);
+  }
+
+  ::-webkit-scrollbar-track{
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
+  }
 `
