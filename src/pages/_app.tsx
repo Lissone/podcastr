@@ -11,7 +11,7 @@ import light from '../styles/themes/light'
 import dark from '../styles/themes/dark'
 
 function MyApp({ Component, pageProps }) {
-  const [theme, setTheme] = usePersistedState('theme', light)
+  const [theme, setTheme] = usePersistedState('theme', dark)
 
   const ToggleTheme = () =>{
     setTheme(theme.title === 'light' ? dark : light)
