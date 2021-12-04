@@ -29,39 +29,45 @@
 <br />
 
 ## Description
-Podcast playback site, with a complete player to listen to your episode, single or in playlists. It was one of my first projects developed with react and next together, where I reinforced several fundamentals such as useState, useEffect, context api, ssr (Server-side redering) and ssg (Static side generation), to fetch data in the api.
+Podcast playback site, with a complete player to listen to your episode, single or in playlists.
+
+It was one of my first projects developed with react and next together, where I reinforced several fundamentals such as useState, useEffect, context api, ssr (Server-side redering) and ssg (Static side generation), to fetch data in the api.
+
 Project for the 5th edition of the Next Level Week (NLW), given by Diego Fernandes (CTO Rocketseat), from April 19 to 25, 2021.
 
 ## Requirements
 
-* [Npm](https://www.npmjs.com/)
-* [Yarn](https://yarnpkg.com/)
-* [Nodejs](https://nodejs.org/en/)
+- [Npm](https://www.npmjs.com/)
+- [Nodejs](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
 
 ## Technologies
 
-- Typescript
-- Next.js
 - React
+- Next.js
+- Typescript
 - StyledComponents
 - JsonServer (Fake api)
 
 ## Usage
 
 You can clone it on your pc using the command:
+
 ```bash
 git clone https://github.com/Lissone/podcastr.git
 cd podcastr
 ```
 
 Install dependencies using:
+
 ```bash
 yarn
 #or
-npm run
+npm install
 ```
 
 Run fake api:
+
 ```bash
 yarn server
 #or
@@ -69,6 +75,7 @@ npm run server
 ```
 
 Run web:
+
 ```bash
 yarn dev
 #or
@@ -77,10 +84,10 @@ npm run dev
 
 ## Demonstration
 
-**Tela Inicial**
+**Home page**
 ![Home](https://i.imgur.com/k1XCKhJ.png)
 
-**Página episódio**
+**Episode page**
 ![Episode](https://i.imgur.com/lGaZqtv.png)
 
 ## License
