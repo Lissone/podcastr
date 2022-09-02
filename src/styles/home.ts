@@ -39,9 +39,14 @@ export const LatestEpisodes = styled.section`
       align-items: center;
 
       img {
-        width: 6rem;
-        height: 6rem;
+        max-width: 6rem;
+        max-height: 6rem;
         border-radius: 1rem;
+
+        @media (max-width: 550px) {
+          width: 0rem;
+          height: 0rem;
+        }
       }
 
       button {
@@ -70,7 +75,8 @@ export const LatestEpisodes = styled.section`
     }
 
     @media (max-width: 950px) {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
     }
   }
 `
