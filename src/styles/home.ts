@@ -70,10 +70,7 @@ export const LatestEpisodes = styled.section`
     }
 
     @media (max-width: 950px) {
-      display: flex;
-      flex-direction: column;
-
-      gap: 0;
+      grid-template-columns: 1fr;
     }
   }
 `
