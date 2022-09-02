@@ -8,6 +8,8 @@ export const Scroll = styled.div`
 
   @media (max-width: 1450px) {
     overflow-y: hidden;
+    
+    margin-bottom: 3rem;
   }
 `
 

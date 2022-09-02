@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 
 import usePersistedState from '../utils/usePersistedState'
@@ -18,21 +19,27 @@ function MyApp({ Component, pageProps }) {
   }
 
   return (
-    <ThemeProvider  theme={theme}>
-      <PlayerContextProvider>
-        <GlobalStyle />
-        
-        <Wrapper>
-          <main>
-            <Header toggleTheme={ToggleTheme}/>
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
 
-            <Component {...pageProps} />
-          </main>
+      <ThemeProvider  theme={theme}>
+        <PlayerContextProvider>
+          <GlobalStyle />
+          
+          <Wrapper>
+            <main>
+              <Header toggleTheme={ToggleTheme}/>
 
-          <Player />
-        </Wrapper>
-      </PlayerContextProvider>
-    </ThemeProvider>
+              <Component {...pageProps} />
+            </main>
+
+            <Player />
+          </Wrapper>
+        </PlayerContextProvider>
+      </ThemeProvider>
+    </>
   )
 }
 
